@@ -8,6 +8,7 @@ format:
 		black */*.py
 lint: 
 	# pylint Commands
+	pylint --disable=R,C *.py */*.py
 test:
 	# test Commands
 deploy:
