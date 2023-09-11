@@ -26,7 +26,7 @@ jobs:
         make lint
     - name: Test code assertions
       run: |
-        # make test
+        make test
     - name: Deploy with docker
       run: |
         # make deploy

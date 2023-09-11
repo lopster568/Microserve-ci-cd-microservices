@@ -11,6 +11,9 @@ lint:
 	pylint --disable=R,C *.py */*.py
 test:
 	# test Commands
+	python3 -m pytest -vv --cov=lib test*.py
+build: 
+	# build Commands for docker containers
 deploy:
 	# deploy Commands
 all: 
