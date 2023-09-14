@@ -16,7 +16,7 @@ async def search(value: str):
     return {"result": result}
 
 @app.get("/wiki/{name}")
-async def search(name: str):
+async def search_page(name: str):
     """Get a wiki page"""
 
     result = wiki(name)
