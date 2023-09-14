@@ -16,5 +16,9 @@ build:
 	# build Commands for docker containers
 deploy:
 	# deploy Commands
+	docker build -t deploy-fastapi .
+run: 
+	# run Commands
+	docker run -p 8080:8080 deploy-fastapi
 all: 
 	install format lint test deploy

@@ -27,6 +27,6 @@ jobs:
     - name: Test code assertions
       run: |
         make test
-    - name: Deploy with docker
+    - name: Build Docker Container Image
       run: |
-        # make deploy
+        make build
